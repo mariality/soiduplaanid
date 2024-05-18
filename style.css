@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Hebrew';
+    
+   
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    flex-grow: 1;
+}
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.menu-button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #D9D9D9;
+    border-radius: 2px;
+}
+.container {
+    position: relative;
+    padding-top: 20px;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    border-radius: 3px;
+    background: linear-gradient(to right,
+            #ffff 5%, #0064D7 0 10%, 
+                #ffff 0 15%, #00E1B4 0 20%, 
+                #ffff 0 25%, #FF601E 0 30%, 
+                #ffff 0 35%, #0064D7 0 40%, 
+                #ffff 0 45%, #00E1B4 0 50%, 
+                #ffff 0 55%, #FF601E 0 60%, 
+                #ffff 0 65%, #0064D7 0 70%, 
+                #ffff 0 75%, #00E1B4 0 80%, 
+                #ffff 0 85%, #FF601E 0 90%, 
+                #ffff 0 95%, #0064D7 0 100%
+                );
+    background-size: 100% 100%; 
+                
+}
+.search-box {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 10px;
+    background-color: #fff;
+    display: flex;
+}
+.search-box input[type="text"] {
+    width: calc(100% - 50px);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 10px;
+}
+.search-box input[type="text"]::placeholder {
+    color: #999;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.search-box .icon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+    padding-top: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.bus_box {
+    display: flex;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px;
+    border: 2px solid #D9D9D9; 
+    cursor: pointer; 
+    
+}
+.bus {
+    width: 200px;
+    height: 150px;
+    background-color: #00E1B4;
+    position: relative;
+    margin-left: 40px;
+    border-radius: 10px 10px 0 0;
+}
+.bus::before, .bus::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 40px;
+    height: 40px;
+    background-color: #00E1B4;
+    border-radius: 50%;
+}
+.bus::before {
+    left: 20px;
+}
+.bus::after {
+    right: 20px;
+}
+.window {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+.window::before, .window::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #00E1B4;
+    border-radius: 50%;
+}
+.window::before {
+    left: -10px;
+}
+.window::after {
+    right: -10px;
+}
+.light {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 15px;
+    background-color: white;
+    border-radius: 30%;
+}
+.light.left {
+    left: 40px;
+    margin-bottom: 20px;
+}
+
+.light.right {
+    right: 40px;
+    margin-bottom: 20px;
+}
+.clock {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.clock::before, .clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    transform-origin: bottom;
+}
+.clock::before {
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg); /* Hour hand */
+}
+.clock::after {
+    width: 1px;
+    height: 15px;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); /* Minute hand */
+}
+.text_bus {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;   
+}
+.markers_box {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 260px;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 200px;
+    
+    border: 2px solid #D9D9D9; 
+}
+.markers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -30px;
+}
+.marker {
+    width: 50px;
+    height: 80px;
+    background-color: #FF601E;
+    border-radius: 50% 55% 50% 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-50deg);
+}
+.marker.blue {
+    background-color: #0064D7;
+}
+.marker::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.text_flight  {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: -100px;
+    font-size: 20px;
+    text-align: center;
+}
+.star_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 55px;
+}
+.text_star::before {
+    content: ""; 
+    background-image: url('star.png'); 
+    display: inline-block; 
+    vertical-align: middle;
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px; 
+ 
+}
+.star_image {
+    width: 40px;
+    height: 40px;
+   
+}
+.p_star {
+    color: #909090;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 125px;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+    padding-top: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+}
+.notifications_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+.bell_image {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+}
+
+.bus_numbers {
+    display: flex;
+    align-items: center;
+    font-size: 1em; /* Adjust size as needed */
+}
+
+.bus_icon {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px; /* Adjust space between icon and text */
+}
+
+/* Style for the orange line */
+.date_range {
+    margin-top: 10px;
+    border-top: 2px solid orange;
+    padding-top: 5px;
+}
+
+/* Style for the "Kuva rohkem" link */
+.more_link {
+    display: block;
+    margin-top: 10px;
+    color: blue; /* Change color as needed */
+    text-decoration: none;
+}
+
+.more_link:hover {
+    text-decoration: underline;
+}
