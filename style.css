@@ -3,7 +3,6 @@ main {
     margin: 0 auto;
 }
 body {
-    margin: 0;
     font-family: 'Open Sans Hebrew';
 }
 .header {
@@ -38,7 +37,7 @@ body {
     background-color: #D9D9D9;
     border-radius: 2px;
 }
-.container {
+.container {    
     position: relative;
     padding-top: 20px;
 }
@@ -89,12 +88,6 @@ body {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-}
-.search-box .icon {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .box {
     display: flex;
@@ -302,7 +295,11 @@ body {
     margin-top: 50px;
     color: #909090;
     margin-left: -115px;
+    
+}
+.p_notifications li {
     list-style-type: none;
+
 }
 .bell_image {
     width: 40px;
@@ -313,6 +310,7 @@ body {
     display: flex;
     position: relative;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .text_notifi::before {
@@ -322,6 +320,7 @@ body {
     vertical-align: middle;
     width: 20px; 
     height: 20px;
+
     
 }
 .bus_numbers {
@@ -337,9 +336,6 @@ body {
     height: auto;
     margin-right: 8px; 
     filter: invert(76%) sepia(60%) saturate(459%) hue-rotate(110deg) brightness(94%) contrast(89%);
-
-    
-    
 }
 
 .date_range {
@@ -355,10 +351,82 @@ body {
     color: #4E8FDA;
     margin-left: 43px;
     margin-bottom: 10px;
-    
 }
 
 .more_link:hover {
     text-decoration: underline;
 }
 
+/*Page 2*/
+
+.box_lemmik {
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+    padding-top: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    
+}
+.route_bus_box {
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+    margin-top: 150px ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #E1E1E1;
+    display: flex;
+    align-items: center;
+    font-size: 1em; 
+    color: #0d1a0f;
+    margin-left: 50px;
+}
+.route_bus_box h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.route_bus_box p {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.route_tram_box {
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+    margin-top: 150px ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #E1E1E1;
+    display: flex;
+    align-items: center;
+    font-size: 1em; 
+    color: #0d1a0f;
+    margin-left: 50px;
+    
+}
+
+.route_tram_box {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.route_tram_box p{
+    margin: 0;
+}
+.tram_icon {
+    width: 36px; 
+    height: auto;
+    margin-right: 8px; 
+    filter: invert(50%) sepia(900%) saturate(959%) hue-rotate(510deg) brightness(100%) contrast(80%);
+
+}
